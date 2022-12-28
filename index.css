@@ -1,0 +1,51 @@
+body {
+    color: rgb(209, 205, 199);
+    background-color: rgb(24, 26, 27);
+}
+* {
+    font-family: 'Architects Daughter', 'Noto Sans SC', cursive;
+    text-align: center;
+}
+h1 {
+    font-size: xx-large;
+}
+p {
+    font-size: larger;
+}
+.txt-box-whole-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#title-page {
+    font-weight: bolder;
+    font-size: larger;
+    padding-top: 50px;
+}
+.gallery {
+    display: block;
+    text-align: center;
+}
+.gallery img {
+    width: 100vw;
+}
+@media (min-width:801px)  {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .gallery img {
+        width: 100vw;
+    }
+}
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+    .gallery img {
+        width: 50vw;
+    }
+}
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
+    .gallery img {
+        width: 33vw;
+    }
+}
